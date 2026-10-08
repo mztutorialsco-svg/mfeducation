@@ -82,7 +82,7 @@ const FinalCTA = ({ selectedBatch }: FinalCTAProps) => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
+              href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699.00&cu=INR"
               className="btn-gold text-center font-extrabold text-lg px-10 py-5"
               style={{ boxShadow: '0 8px 40px rgba(245,158,11,0.4)' }}
             >

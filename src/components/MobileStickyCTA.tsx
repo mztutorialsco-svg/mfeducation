@@ -20,7 +20,7 @@ const MobileStickyCTA = ({ selectedBatch }: MobileStickyCTAProps) => {
       <div className="flex items-center gap-2">
         {/* Pay Button */}
         <a
-          href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
+          href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699.00&cu=INR"
           className="flex-1 flex items-center justify-center gap-1.5 py-3.5 rounded-xl font-extrabold text-black text-sm transition-all active:scale-95"
           style={{
             background: 'linear-gradient(135deg, #f59e0b, #fbbf24)',
