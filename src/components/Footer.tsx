@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
 import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY } from '../App';
 
 const Footer = () => {
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
   const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
-
 
   return (
     <footer
@@ -104,10 +104,29 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Policy links row */}
+        <div className="flex flex-wrap gap-x-5 gap-y-2 justify-center mb-6">
+          {[
+            { to: '/products', label: 'Products & Services' },
+            { to: '/contact', label: 'Contact Us' },
+            { to: '/terms', label: 'Terms & Conditions' },
+            { to: '/refund-policy', label: 'Refund & Cancellation Policy' },
+            { to: '/privacy-policy', label: 'Privacy Policy' },
+          ].map(link => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-xs text-gray-500 hover:text-amber-400 transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
         {/* Bottom */}
         <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-gray-600 text-xs">
-            © 2024 MF Education & Careers. All rights reserved. Udyam Registered • Government of India.
+            © 2024 MF Education &amp; Careers. All rights reserved. Udyam Registered • Government of India.
           </p>
           <div className="flex gap-4 text-xs text-gray-600">
             <a href="#home" className="hover:text-gray-400 transition-colors">Home</a>
@@ -122,3 +141,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

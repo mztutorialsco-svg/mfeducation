@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SkillsSection from './components/SkillsSection';
@@ -14,6 +15,11 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import MobileStickyCTA from './components/MobileStickyCTA';
 import Particles from './components/Particles';
+import ContactUs from './pages/ContactUs';
+import TermsAndConditions from './pages/TermsAndConditions';
+import RefundPolicy from './pages/RefundPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Products from './pages/Products';
 
 export const WHATSAPP_NUMBER = '7207870120';
 export const WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/0029Vb87ECw3WHTTrs6TsF23';
@@ -31,7 +37,7 @@ export const BATCHES = [
   { id: 4, label: 'BATCH 04', time: '9:30 PM – 11:00 PM', timeShort: '9:30 PM' },
 ];
 
-function App() {
+function HomePage() {
   const [selectedBatch, setSelectedBatch] = useState<typeof BATCHES[0] | null>(null);
 
   useEffect(() => {
@@ -68,6 +74,29 @@ function App() {
       <Footer />
       <MobileStickyCTA selectedBatch={selectedBatch} />
     </div>
+  );
+}
+
+function PolicyPageWrapper({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="relative min-h-screen bg-navy-950 overflow-x-hidden">
+      <Particles />
+      {children}
+      <Footer />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/contact" element={<PolicyPageWrapper><ContactUs /></PolicyPageWrapper>} />
+      <Route path="/terms" element={<PolicyPageWrapper><TermsAndConditions /></PolicyPageWrapper>} />
+      <Route path="/refund-policy" element={<PolicyPageWrapper><RefundPolicy /></PolicyPageWrapper>} />
+      <Route path="/privacy-policy" element={<PolicyPageWrapper><PrivacyPolicy /></PolicyPageWrapper>} />
+      <Route path="/products" element={<PolicyPageWrapper><Products /></PolicyPageWrapper>} />
+    </Routes>
   );
 }
 
