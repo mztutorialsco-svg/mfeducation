@@ -23,7 +23,6 @@ import Products from './pages/Products';
 
 export const WHATSAPP_NUMBER = '7207870120';
 export const WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/0029Vb87ECw3WHTTrs6TsF23';
-export const UPI_ID = 'mfskils.co@okicici';
 export const COURSE_FEE = '699';
 export const COURSE_FEE_DISPLAY = '₹699';
 export const START_DATE = '12th October • Monday';

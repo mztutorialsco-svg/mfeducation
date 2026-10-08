@@ -81,8 +81,8 @@ const Footer = () => {
               <div className="text-gray-400 text-sm">WhatsApp: 7207870120</div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR" className="btn-gold text-xs px-5 py-3 font-extrabold">
-                PAY ₹699 VIA UPI
+              <a href="/#payment" className="btn-gold text-xs px-5 py-3 font-extrabold">
+                PAY ₹699 — ENROLL NOW
               </a>
               <a
                 href={WHATSAPP_CHANNEL_URL}

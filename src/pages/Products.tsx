@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { WHATSAPP_CHANNEL_URL } from '../App';
 
 const Products = () => {
@@ -54,9 +54,9 @@ const Products = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
+            <a href="/#payment"
               className="btn-gold text-center font-extrabold text-sm px-6 py-3">
-              💳 PAY ₹699 VIA UPI
+              💳 PAY ₹699 — ENROLL NOW
             </a>
             <a href={WHATSAPP_CHANNEL_URL} target="_blank" rel="noopener noreferrer"
               className="btn-whatsapp text-center font-extrabold text-sm px-6 py-3">

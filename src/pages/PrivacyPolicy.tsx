@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
   return (
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
             },
             {
               title: 'Payment Information',
-              body: 'Payments are processed via UPI (Unified Payments Interface) through your chosen UPI app (Google Pay, PhonePe, Paytm, etc.). MF Education & Careers does not collect, store, or have access to your bank account details, UPI PIN, or card information. All payment transactions are governed by NPCI and your bank.',
+              body: 'Payments are processed securely via Cashfree Payment Gateway, which supports UPI, debit/credit cards, wallets, and other methods. MF Education & Careers does not collect, store, or have access to your bank account details, UPI PIN, or card information. All payment transactions are handled securely by Cashfree Payments.',
             },
             {
               title: 'Data Sharing',

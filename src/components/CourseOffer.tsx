@@ -97,7 +97,7 @@ const CourseOffer = ({ selectedBatch, onBatchSelect }: CourseOfferProps) => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#payment" className="btn-gold text-center font-extrabold">
-                💳 PAY {COURSE_FEE_DISPLAY} VIA UPI
+                💳 PAY {COURSE_FEE_DISPLAY} — ENROLL NOW
               </a>
               <a
                 href={WHATSAPP_CHANNEL_URL}
