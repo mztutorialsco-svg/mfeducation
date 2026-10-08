@@ -3,7 +3,7 @@ import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY, UPI_ID, COURSE_FEE }
 const Footer = () => {
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
   const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
-  const upiUrl = `upi://pay?pa=${UPI_ID}&pn=MF%20Education%20%26%20Careers&am=${COURSE_FEE}&cu=INR`;
+
 
   return (
     <footer
@@ -81,7 +81,7 @@ const Footer = () => {
               <div className="text-gray-400 text-sm">WhatsApp: 7207870120</div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href={upiUrl} className="btn-gold text-xs px-5 py-3 font-extrabold">
+              <a href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR" className="btn-gold text-xs px-5 py-3 font-extrabold">
                 PAY ₹699 VIA UPI
               </a>
               <a

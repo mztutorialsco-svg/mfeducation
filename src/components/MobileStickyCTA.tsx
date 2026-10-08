@@ -8,7 +8,7 @@ interface MobileStickyCTAProps {
 const MobileStickyCTA = ({ selectedBatch }: MobileStickyCTAProps) => {
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
   const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
-  const upiUrl = `upi://pay?pa=${UPI_ID}&pn=MF%20Education%20%26%20Careers&am=${COURSE_FEE}&cu=INR`;
+
 
   return (
     <motion.div
@@ -20,7 +20,7 @@ const MobileStickyCTA = ({ selectedBatch }: MobileStickyCTAProps) => {
       <div className="flex items-center gap-2">
         {/* Pay Button */}
         <a
-          href={upiUrl}
+          href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
           className="flex-1 flex items-center justify-center gap-1.5 py-3.5 rounded-xl font-extrabold text-black text-sm transition-all active:scale-95"
           style={{
             background: 'linear-gradient(135deg, #f59e0b, #fbbf24)',

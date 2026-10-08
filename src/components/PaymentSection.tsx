@@ -21,7 +21,7 @@ const PaymentSection = ({ selectedBatch }: PaymentSectionProps) => {
   );
   const confirmationUrl = `https://wa.me/917207870120?text=${confirmationMsg}`;
 
-  const upiUrl = `upi://pay?pa=${UPI_ID}&pn=MF%20Education%20%26%20Careers&am=${COURSE_FEE}&cu=INR`;
+
 
   const copyUpiId = async () => {
     try {
@@ -137,7 +137,7 @@ const PaymentSection = ({ selectedBatch }: PaymentSectionProps) => {
 
               {/* Pay Button */}
               <a
-                href={upiUrl}
+                href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
                 className="btn-gold w-full text-center block font-extrabold text-lg mb-3 py-4"
               >
                 PAY ₹699 VIA UPI

@@ -10,7 +10,7 @@ const FinalCTA = ({ selectedBatch }: FinalCTAProps) => {
   const [ref, inView] = useInView(0.1);
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
   const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
-  const upiUrl = `upi://pay?pa=${UPI_ID}&pn=MF%20Education%20%26%20Careers&am=${COURSE_FEE}&cu=INR`;
+
 
   return (
     <section className="section-padding relative overflow-hidden">
@@ -82,7 +82,7 @@ const FinalCTA = ({ selectedBatch }: FinalCTAProps) => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href={upiUrl}
+              href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
               className="btn-gold text-center font-extrabold text-lg px-10 py-5"
               style={{ boxShadow: '0 8px 40px rgba(245,158,11,0.4)' }}
             >
