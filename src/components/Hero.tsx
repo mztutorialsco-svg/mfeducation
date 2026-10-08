@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+
 import { motion } from 'framer-motion';
-import { WHATSAPP_CHANNEL_URL, BATCHES, COURSE_FEE_DISPLAY, START_DATE, BATCH_SIZE } from '../App';
+import { WHATSAPP_CHANNEL_URL, BATCHES, COURSE_FEE_DISPLAY, BATCH_SIZE } from '../App';
 
 interface HeroProps {
   selectedBatch: typeof BATCHES[0] | null;
   onBatchSelect: (batch: typeof BATCHES[0]) => void;
 }
 
-const Hero = ({ selectedBatch, onBatchSelect }: HeroProps) => {
+const Hero = (_props: HeroProps) => {
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
   const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
 

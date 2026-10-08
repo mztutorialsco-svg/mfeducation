@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY, UPI_ID, COURSE_FEE } from '../App';
+import { BATCHES, WHATSAPP_CHANNEL_URL, UPI_ID, COURSE_FEE } from '../App';
 
 interface MobileStickyCTAProps {
   selectedBatch: typeof BATCHES[0] | null;

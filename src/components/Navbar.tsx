@@ -16,7 +16,7 @@ const navLinks = [
   { href: '#faq', label: 'FAQ' },
 ];
 
-const Navbar = ({ selectedBatch }: NavbarProps) => {
+const Navbar = (_props: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -26,8 +26,6 @@ const Navbar = ({ selectedBatch }: NavbarProps) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');
-  const whatsappChatUrl = `https://wa.me/917207870120?text=${whatsappMsg}`;
 
   return (
     <nav
