@@ -137,7 +137,7 @@ const PaymentSection = ({ selectedBatch }: PaymentSectionProps) => {
 
               {/* Pay Button */}
               <a
-                href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699.00&cu=INR"
+                href="upi://pay?pa=mfskils.co@okicici&pn=MF%20Education%20%26%20Careers&am=699&cu=INR"
                 className="btn-gold w-full text-center block font-extrabold text-lg mb-3 py-4"
               >
                 PAY ₹699 VIA UPI
