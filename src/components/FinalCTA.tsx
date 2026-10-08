@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY, UPI_ID, COURSE_FEE } from '../App';
+import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY } from '../App';
 
 interface FinalCTAProps {
   selectedBatch: typeof BATCHES[0] | null;

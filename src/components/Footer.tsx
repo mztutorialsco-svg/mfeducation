@@ -1,4 +1,4 @@
-import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY, UPI_ID, COURSE_FEE } from '../App';
+import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE_DISPLAY } from '../App';
 
 const Footer = () => {
   const whatsappMsg = encodeURIComponent('Hi, I am interested in the 7 Days 7 Skills course for ₹699. Please share the details.');

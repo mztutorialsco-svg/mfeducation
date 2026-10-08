@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Copy, CheckCircle, ExternalLink } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
-import { BATCHES, WHATSAPP_CHANNEL_URL, COURSE_FEE, COURSE_FEE_DISPLAY, UPI_ID, START_DATE } from '../App';
+import { BATCHES, WHATSAPP_CHANNEL_URL, UPI_ID, START_DATE, COURSE_FEE_DISPLAY } from '../App';
 
 interface PaymentSectionProps {
   selectedBatch: typeof BATCHES[0] | null;
