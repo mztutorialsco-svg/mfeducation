@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'How can I pay?',
-    a: 'You can pay ₹699 securely through our Cashfree checkout. Click the "PAY ₹699" button and enter your details. You can pay using UPI, debit/credit cards, wallets, and more.',
+    a: 'You can pay ₹699 by scanning our UPI QR code in the payment section using Google Pay, PhonePe, Paytm, or any UPI app. After payment, send a quick confirmation on WhatsApp to complete enrollment.',
   },
   {
     q: 'How can I join the WhatsApp Channel?',

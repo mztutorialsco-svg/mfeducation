@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
             },
             {
               title: 'Payment Information',
-              body: 'Payments are processed securely via Cashfree Payment Gateway, which supports UPI, debit/credit cards, wallets, and other methods. MF Education & Careers does not collect, store, or have access to your bank account details, UPI PIN, or card information. All payment transactions are handled securely by Cashfree Payments.',
+              body: 'Payments are processed directly via UPI (Google Pay, PhonePe, Paytm, and other UPI applications). MF Education & Careers does not collect, store, or have access to your bank account details, UPI PIN, or card information.',
             },
             {
               title: 'Data Sharing',

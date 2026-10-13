@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
             },
             {
               title: '3. Registration & Payment',
-              body: 'Registration is confirmed only upon successful payment of ₹699 INR. Payment is accepted via Cashfree Payment Gateway (UPI, cards, wallets, and other methods). Seats are strictly limited to 15 members per batch. Enrollment is on a first-come, first-served basis.',
+              body: 'Registration is confirmed only upon successful payment of ₹699 INR. Payment is accepted via UPI (Google Pay, PhonePe, Paytm, and all UPI apps). Seats are strictly limited to 15 members per batch. Enrollment is on a first-come, first-served basis.',
             },
             {
               title: '4. Batch Allocation',
